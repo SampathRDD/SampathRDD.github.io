@@ -466,9 +466,7 @@ footer p:nth-child(2){
     box-shadow:0.2vw 0.2vw 10vw #f90800;
 }
 .skill-anim{
-    background-size: cover;
     border-radius: 1vw;
-    background-image:url(../Image/Mobi.png);
     height:60vh; 
     margin-left: 15vw;
 
