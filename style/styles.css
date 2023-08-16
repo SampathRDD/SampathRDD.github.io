@@ -468,6 +468,9 @@ footer p:nth-child(2){
 .skill-anim{
     background-size: cover;
     border-radius: 1vw;
+    background-image:url(../Image/Mobi.png);
+    height:60vh; 
+    margin-left: 15vw;
 
 }
 .skill-anim:hover{
