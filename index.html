@@ -6,10 +6,59 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://kit.fontawesome.com/a04deeb4ff.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="./style/styles.css">
+<style>
+    .container {
+        width: 80%;
+        margin: 2px auto;
+        background: #ffffff00;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .header, .section {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #00000000;
+        border: 1px solid #ddd;
+    }
+    .header {
+        background-color: #00000000;
+        color: #ffffff;
+        font-size: 24px;
+        text-align: center;
+    }
+    .section:not(:last-child) {
+        border-bottom: none;
+    }
+    .section:hover {
+        background-color: #000000bb;
+    }
+    .section h2 {
+        color: #e0095c;
+        font-size: 20px;
+    }
+    .section p {
+        margin: 5px 0px;
+        line-height: 1;
+        margin-left: 10%;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+    }
+    .box {
+        padding: 10px;
+        background: #e8e8e800;
+    }
+    .box h3 {
+        color: darkgreen;
+    }
+</style>
 </head>
 <body>
     <button class="back-top" onclick="topFunction()" id="myBtn"><i class="fa-solid fa-angles-up"></i></button>
@@ -37,11 +86,118 @@
                 <h2>About Me</h2>
                 <h5>developer <span>& Designer</span> </h5>
                 <p>I am a Software Engineer. I can provide clean code and develops and maintains computer software. I also make the web site more & more interactive
-                     with web animations. A responsive design make your website 
-                     accessible to all users, regardless of their device.
+                    with web animations. A responsive design make your website 
+                    accessible to all users, regardless of their device.
                 </p>
                 <a href="#talk"><button class="button">Let's Talk</button></a>
             </div>
+    </section>
+
+    <section class="about" id="about">
+
+        <h2 style="text-align: center; margin-bottom: 3rem; font-weight: 700;"><span>Reflective </span>Journal</h2>
+        <div class="accordion" id="accordionPanelsStayOpenExample" style="width: 80%; margin-left: 10%; background-color: transparent;">
+            <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+              <h2 class="accordion-header">
+                <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Description
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                <div class="accordion-body">
+                    <ul>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Upon reflecting on my educational journey, I recognize the significant personal and professional development I have undergone. The training in presentation skills has notably boosted my confidence and articulation in public speaking. This skill has become crucial, enabling me to effectively convey my thoughts and ideas.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">My expertise in business writing has also been greatly enhanced. I've learned to compose professional emails, memos, and reports with precision and effectiveness. Additionally, the training in both formal and informal letter writing has equipped me with the versatility to adapt my communication style to different situations.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The comprehensive "Preparation for Professional World" module has not only refined my technical abilities but also increased my self-awareness and adaptability to diverse environments. I am deeply appreciative of the knowledge and experiences gained and am excited to apply them in my upcoming professional endeavors.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+              <h2 class="accordion-header">
+                <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Feelings
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body" >
+                    <ul >
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">As I embarked on the "Preparation for Professional World" module, a wave of excitement washed over me. I was keenly aware of the importance of honing my communication skills and mastering professional etiquette in the realm of software engineering. Recognizing that effective communication is pivotal for success in any field, I was driven to acquire the skills necessary to thrive in my future endeavors.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The breadth of topics introduced was initially daunting, presenting a steep learning curve that demanded dedication and persistence. Despite feeling uncertain about my ability to apply these skills practically, my resolve to tackle challenges and optimize every learning opportunity helped me overcome my initial doubts.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">As the module unfolded, my apprehension gradually gave way to a profound sense of empowerment and burgeoning confidence. Engaging in practical exercises, absorbing constructive feedback, and witnessing my personal evolution bolstered my self-assurance. Successfully delivering presentations and crafting professional business emails became milestones that not only marked my progress but also solidified my confidence in my communication capabilities. These achievements were not just steps in learning; they were affirmations of my potential to excel professionally and personally.
+
+                        </li>
+                    </ul>
+                                  </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+              <h2 class="accordion-header">
+                <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Evolution
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <ul>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The module offered thorough training in presentation skills, equipping me with the ability to deliver captivating and informative presentations with newfound confidence. My proficiency in business writing also took a significant leap forward, particularly in composing formal emails, memos, and reports with clarity and brevity.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I delved into the subtleties of both formal and informal letter writing, gaining a clear understanding of the suitable tone and structure for varying contexts. These sessions not only honed my ability to draft concise and clear messages but also emphasized the critical role of formatting, tone, and professionalism in written communications.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The dedicated sessions on memo writing provided me with hands-on experience in presenting vital information in a professional manner. Furthermore, exploring the fundamentals of business writing, especially email etiquette, underscored the importance of clear and effective communication within professional environments.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Through each stage of this module, my understanding deepened, and my skills were refined, preparing me to navigate the professional world with competence and confidence.</li>
+                    </ul>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+                <h2 class="accordion-header">
+                  <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                    Analysis
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The competencies acquired from the module have proven immensely relevant to my field in software engineering. The enhanced presentation skills I've developed are invaluable, enabling me to articulate project ideas, updates, and outcomes with clarity and confidence to both colleagues and stakeholders.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">My proficiency in business writing has been significantly sharpened, allowing me to craft professional documents, persuasive proposals, and communicate complex technical details with ease. This skill is crucial for producing clear and effective documentation that aligns with the expectations of my field.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The module's focus on both formal and informal letter writing has equipped me with versatile communication tools necessary for engaging with clients and collaborators across various professional settings. Similarly, the memo writing skills I've cultivated will facilitate efficient internal communication, essential for quick and effective information dissemination within my organization.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Moreover, mastering the essentials of business writing, particularly in email composition, has refined my ability to maintain professional tone and structure in my communications. This expertise is instrumental in fostering robust professional relationships and ensuring that my interactions are both respectful and impactful.</li>
+                    </ul>
+                </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+                <h2 class="accordion-header">
+                  <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                    Conclusion
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">The "Preparation for Professional World" module has played a crucial role in enhancing my professional communication skills, providing a robust foundation crucial for my development as a software engineering student. This comprehensive training has equipped me with essential skills in various forms of business communication, including presentation, formal and informal letter writing, memo writing, and general business writing techniques.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">These skills are not just academic achievements but vital tools that will propel my career forward as a software engineer. They enable me to articulate complex ideas clearly, collaborate effectively with colleagues, and nurture robust professional relationships. Whether it’s presenting a new project idea, drafting a technical report, or corresponding with stakeholders, the abilities I've honed will undoubtedly enhance my effectiveness and contribute significantly to my success in the dynamic field of software engineering.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item" style="border: none; background-color: transparent; color: #FFF;">
+                <h2 class="accordion-header">
+                  <button style="background-color: black; color: #f9004d; font-weight: 700; font-size: large;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                    Action Plan
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse">
+                  <div class="accordion-body">
+                    <ul>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">To further refine and expand the professional communication skills acquired from the module, I am committed to engaging in a series of deliberate and targeted activities. I plan to participate in additional practice sessions to hone these skills continuously. Additionally, seeking constructive feedback from mentors and peers will be integral, as their insights will help me identify areas for improvement and refine my approach.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I also intend to attend workshops and seminars focused on effective communication. These opportunities will provide me with advanced strategies and a deeper understanding of professional interaction, which are essential for my growth in this area.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Moreover, I will actively apply the learned skills in various practical settings, including my coursework, ongoing projects, and internships. This hands-on application is crucial for integrating theoretical knowledge with real-world practice, thereby enhancing my proficiency.</li><br>
+                        <li style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Committed to lifelong learning, I will regularly reflect on my communication practices. This reflective practice will ensure that I remain adaptable and responsive to the evolving demands of the software engineering industry, keeping my skills relevant and sharp.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
     </section>
 
     <!--service setion  start-->
@@ -112,19 +268,19 @@
             <div class="talk-1">
                 <a href='https://www.facebook.com/rdd.sampath.90/'><div className='box-1'>
                     <i class="fa-brands fa-facebook"></i>
-                  </div>Facebook</a>
-                  <a href='https://twitter.com/RddsDhanu'><div className='box-1'>
+                </div>Facebook</a>
+                <a href='https://twitter.com/RddsDhanu'><div className='box-1'>
                     <i class="fa-brands fa-twitter"></i>
-                  </div>Twitter</a>
-                  <a href='https://www.linkedin.com/in/dhanushka-sampath-255582208/'><div className='box-1'>
+                </div>Twitter</a>
+                <a href='https://www.linkedin.com/in/dhanushka-sampath-255582208/'><div className='box-1'>
                     <i class="fa-brands fa-linkedin"></i>
-                  </div>Linkedin</a>
+                </div>Linkedin</a>
                 <a href='https://albatrick.blogspot.com/'><div className='box-1'>
                     <i class="fa-brands fa-blogger"></i>
-                  </div>Blogger</a>
-                  <a href='https://t.me/Dhanushka000001/'><div className='box-1'>
+                </div>Blogger</a>
+                <a href='https://t.me/Dhanushka000001/'><div className='box-1'>
                     <i class="fa-brands fa-telegram"></i>
-                  </div>Telegram</a>
+                </div>Telegram</a>
             </div>
             <img src="./Image/chat.png" alt="chat"/>
         </div>
@@ -150,7 +306,6 @@
                 </tr>
             </table>  
             <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="VERTICAL" data-vanity="rddsampath" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://lk.linkedin.com/in/rddsampath?trk=profile-badge">RDD Sampath</a></div>
-              
         </div>
 
     </section>
@@ -167,13 +322,12 @@
             <!-- <li><span>Host link: </span><a href="https://life-style-dhanushka.web.app/"><i class="fa-solid fa-link"></i></a></li> -->
             <li><span>Source code: <i class="fa-brands fa-github"></i> </span><a href="https://github.com/SampathRDD/Eco_Saver.git"target="_blank"> <i class="fa-solid fa-link"></i></a></li>
             <li style="width:35vw;margin-left:2vw;text-align: justify;"><span>project About:</span><br><br> The project consists of three main pages: Task List, Add Task, and Task Detail. Task List displays tasks, Add Task allows users to create new tasks, and Task Detail allows users to view details and mark tasks as completed or uncompleted. CRUD operations are integrated for a seamless user experience.
-                 </li>
+                </li>
             <li><span>Technologies</span> <br><br><i class="fa-brands fa-react"></i>  React JS <br><br> <i class="fa-brands fa-css3-alt"></i> Custome CSS <br><br><i class="fa-brands fa-html5"></i> HTML <br><br><i class="fa-solid fa-database"></i> MongoDB</li>
-            
         </div>
         <!--UX/UI-->
     </section>
-    <section class="skill" id="mobile">
+    <section class="skill-m" id="mobile">
         <div class="skill-tit">
             <h2><span>Mobile App</span> Development</h2>
         </div>
@@ -182,19 +336,20 @@
             <img src="./Image/Mobi.png" class="skill-anim"/>
         </div>
         <div class="skill-det">
-            <li><span> Project Name:</span> Oxygen Tracker Mobile App & Hospitality Institute Mobile App</li>
+            <li><span> Project Name:</span> Oxygen Tracker & Hospitality Institute Mobile App</li>
             <li style="width:35vw;margin-left:2vw;text-align: justify;"><span>project About:</span><br><br> Oxygen Tracker Mobile App:
-                <li>The Oxygen Tracker Mobile App utilizes a modern technology stack to provide a seamless user experience. Built with React Native, the app offers cross-platform development for Android and iOS platforms. The coding process is streamlined with the support of Visual Studio Code, a lightweight and feature-rich code editor. For Android-specific tasks, the app leverages Android Studio, ensuring optimal performance on Android devices. With this technology stack, the Oxygen Tracker Mobile App delivers a user-friendly interface and efficient oxygen level tracking capabilities. </li>
-                <li><span>Mobile App : PlayStore </span><a href="https://play.google.com/store/search?q=oxiwear+fitness&c=apps&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i></a></li>  
-                <li>The Hospitality Institute Mobile App is built with a modern technology stack to offer a user-friendly platform for course applications and interactions. Developed using React Native, the app seamlessly deploys on both Android and iOS platforms, reaching a wider audience. Visual Studio Code aids an efficient coding process, while Android Studio ensures compatibility and smooth functionality for Android devices. With this technology stack, the Hospitality Institute Mobile App delivers a smooth user experience, allowing easy course applications and profile management.</li>
-                <li><span>Mobile App : PlayStore </span><a href="https://play.google.com/store/apps/details?id=com.evolution.myid&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i></a></li> 
-               
+                <li style="width:35vw;margin-left:2vw;text-align: justify;">The Oxygen Tracker Mobile App utilizes a modern technology stack to provide a seamless user experience. Built with React Native, the app offers cross-platform development for Android and iOS platforms. The coding process is streamlined with the support of Visual Studio Code, a lightweight and feature-rich code editor. For Android-specific tasks, the app leverages Android Studio, ensuring optimal performance on Android devices. With this technology stack, the Oxygen Tracker Mobile App delivers a user-friendly interface and efficient oxygen level tracking capabilities. </li>
+                <li style="width:35vw;margin-left:2vw;text-align: justify;"><span>Mobile App : PlayStore </span><a href="https://play.google.com/store/search?q=oxiwear+fitness&c=apps&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i></a></li>  
+                <li style="width:35vw;margin-left:2vw;text-align: justify;">The Hospitality Institute Mobile App is built with a modern technology stack to offer a user-friendly platform for course applications and interactions. Developed using React Native, the app seamlessly deploys on both Android and iOS platforms, reaching a wider audience. Visual Studio Code aids an efficient coding process, while Android Studio ensures compatibility and smooth functionality for Android devices. With this technology stack, the Hospitality Institute Mobile App delivers a smooth user experience, allowing easy course applications and profile management.</li>
+                <li style="width:35vw;margin-left:2vw;text-align: justify;"><span>Mobile App : PlayStore </span><a href="https://play.google.com/store/apps/details?id=com.evolution.myid&hl=en&gl=US" target="_blank"><i class="fa-brands fa-google-play"></i></a></li> 
+            
             </li>
-            <li><span>Technologies</span> <br><br><i class="fa-brands fa-react"></i>  React Native <br><br> <i class="fa-solid fa-database"></i> Redux <br><br><i class="fa-brands fa-android"></i> Android Studio <br><br>
+            <li style="width:35vw;margin-left:2vw;text-align: justify;"><span>Technologies</span> <br><br><i class="fa-brands fa-react"></i>  React Native <br><br> <i class="fa-solid fa-database"></i> Redux <br><br><i class="fa-brands fa-android"></i> Android Studio <br><br>
             
         </div>
         <!--UX/UI-->
     </section>
+
     <section class="skill" id="ux">
         <div class="skill-tit">
             <h2><span>Front-end</span> Development</h2>
@@ -216,7 +371,7 @@
         
     </section>
     <!--Other-->
-    <section class="skill"  id="other">
+    <section class="skill-o"  id="other">
         <div class="skill-tit">
             <h2><span>Other</span> Works</h2>
         </div>
@@ -244,6 +399,97 @@
 
     </section>
 
+    <!--Career Development-->
+    <section class="career"  id="">
+        <div class="skill-tit">
+            <h2><span>Career Development </span> Plan</h2>
+        </div>
+        <div class="container">
+            <div class="section">
+                <h2>Who are you?</h2>
+                <p>Hardworking, Passionate, Optimistic, Inquisitive, Systematic, Disciplined, Analytical, ambitious, enjoy working person.</p>
+            </div>
+        
+            <div class="section">
+                <h2>Education?</h2>
+                <p>A/L, O/L, Following BSc (Hons) in Information Technology </p>
+            </div>
+        
+            <div class="section">
+                <h2>Employment?</h2>
+                <p>Software Engineer</p>
+            </div>
+        
+            <div class="section">
+                <h2>Personal Preferences?</h2>
+                <p>Develop self-confidence not to give up the appointed tasks.</p>
+                <p>Manage the time according to the plan.</p>
+                <p>Lay out a plan and work the layout.</p>
+            </div>
+        
+            <div class="section">
+                <h2>Weaknesses?</h2>
+                <p>Forget the theories and concepts quickly.</p>
+            </div>
+        
+            <div class="section">
+                <h2>Current Competencies, Skills, Knowledge, Experience</h2>
+                <p>Competitive advantage, managerial skills, Leadership skills, Technical thinking, Decision making skills, Programming knowledge.</p>
+            </div>
+        
+            <div class="section">
+                <h2>Development Needs and Skills Required for Current Job and Future Goals</h2>
+                <p>Strategic decision-making skills for developing strategies of the company and adding success for its growth.</p>
+                <p>Better understanding of models for improving work performance.</p>
+            </div>
+        
+            <div class="section">
+                <h2>Action Plans</h2>
+                <p>Gaining Knowledge for involving in trading techniques.</p>
+                <p>Gain knowledge about QA concepts and programming concepts much more.</p>
+            </div>
+        
+            <div class="section grid">
+                <div class="box">
+                    <ul>
+                        <h3 style="color: #e0095c;">Short Term</h3>
+                        <li>Complete the IT Degree</li>
+                        <li>Work hard and get promotion from the job</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <h3 style="color: #e0095c;">Mid Term (2-5 yrs.)</h3>
+                        <li>Complete information Technology Degree.</li>
+                        <li>Being rewarded as a good performer</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <ul>
+                        <h3 style="color: #e0095c;">Long Term (> 5 yrs.)</h3>
+                        <li>Start Working on Masters</li>
+                        <li>Build a successful career as a lead Software Engineer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="certify"  id="">
+        <div class="skill-tit">
+            <h2><span>Certificate of Course </span>Completion</h2>
+            <div style="padding: 0px 5%;">
+            <img class="certificateImg" src="./Image/c1.png" alt="course1">
+            <img class="certificateImg" src="./Image/c2.png" alt="course2">
+            <img class="certificateImg" src="./Image/c3.png" alt="course3">
+            <img class="certificateImg" src="./Image/c4.png" alt="course4">
+        </div>
+        </div>
+
+
+
+    </section>
+
     <!--footer start-->
     <footer>
         <p>Dhanushka Sampath</p>
@@ -255,6 +501,8 @@
         </div>
         <p class="end">AllRight Reserved By Dhanushka</p>
     </footer>
-<script src="./js/backToTop.js"></script>      
+<script src="./js/backToTop.js"></script>  
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>    
 </body>
 </html>
